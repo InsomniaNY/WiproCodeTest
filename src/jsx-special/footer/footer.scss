@@ -1,0 +1,15 @@
+#footercontainer {
+    width: 100%;
+    color: #333;
+    font-family: helvetica, arial, sans-serif;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    footer {
+        font-size: 12px;
+        text-align: right;
+        .note {
+            font-style: italic;
+        }
+    }
+}

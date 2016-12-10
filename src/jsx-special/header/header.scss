@@ -1,0 +1,43 @@
+#headercontainer {
+    width: 100%;
+    color: #333;
+    font-family: helvetica, arial, sans-serif;
+    position: relative;
+    margin-top: 40px;
+    header {
+        text-rendering: optimizeLegibility;
+        font-size: 40px;
+        line-height: 100px;
+        text-align: center;
+        color: #2c2c2c;
+        letter-spacing: .1em;
+        text-shadow: 
+            1px 1px 0px white, 
+            3px 3px 0px rgba(0, 0, 0, 0.2);
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100px;
+        .icons {
+            .icon {
+                float: left;
+                padding-left: 10px;
+            }
+        }
+    }
+
+
+    @media (max-width: 767px) {
+        header {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        .flex {
+            justify-content: center;
+            height: 40px;
+        }
+    }
+
+}

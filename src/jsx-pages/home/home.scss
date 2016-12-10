@@ -1,0 +1,87 @@
+
+#homepage {
+
+	.cities {
+		margin: 5px auto;
+		padding: 0;
+		text-align: center;
+		.citylink {
+			padding: 0 10px;
+			cursor: pointer;
+			&:hover {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.city {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.times {
+		margin-top: 32px;
+	}
+
+	.homePanel {
+		margin-bottom: 10px;
+		/* overflow: hidden; */
+		.day {
+			.panelTitle {
+				height: 32px;
+				text-align: center;
+				width: 100%;
+				font-size: 22px;
+				@media (max-width: 767px) {
+					height: 36px;
+					font-size: 16px;
+				}
+			}
+			.panelData {
+				text-align: center;
+				font-size: 14px;
+				@media (max-width: 992px) {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.timeblock {
+		margin-top: 10px;
+		height: 140px;
+		padding: 5px 0;
+		label {
+			font-size: 12px;
+		}
+		&:nth-child(odd){
+			background-color: #F7F7F7;
+		}
+		.timestring {
+			text-align: center;
+		    margin: 55px auto;
+		    font-size: 14px;
+		    @media (max-width: 992px) {
+				margin: 70px auto;
+			}
+		    @media (max-width: 767px) {
+				margin: 10px auto;
+			}
+		}
+		@media (max-width: 992px) {
+			height: 180px;
+		}
+		@media (max-width: 767px) {
+			height: 40px;
+		}
+	}
+
+	@media (max-width: 992px) {
+		.forDesktop { display: none; }
+		.forMobile { display: inline; }
+	}
+	@media (min-width: 992px) {
+		.forDesktop { display: inline; }
+		.forMobile { display: none; }
+	}
+}

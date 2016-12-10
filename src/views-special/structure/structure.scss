@@ -1,0 +1,86 @@
+/* We import the SASS variables file once for the entire project,
+	and then use GULP to push across all files before pushing to prod folder 
+*/
+@import '../../src/views-special/structure/variables';
+
+/*  essential site wide css, please don't delete */
+body, html, A, IMG { padding: 0; border: 0; margin: 0; }
+#appContainer, #pagecontainer { position: relative; margin-top: 10px; margin-bottom: 10px; }
+#appContainer { margin: 0 auto; overflow: hidden; }
+/* */
+
+
+
+
+
+/* very useful css, but edit at will  */
+#appContainer IMG { display: block; }
+#appContainer A { display: block; }
+
+
+
+
+
+/* very useful css, helps with responsive, but edit at will  */
+//#appContainer IMG { width: auto; max-width: 100%; }
+
+
+
+
+
+/*   non essential css   */
+
+
+/*   non essential css   */
+
+.codestyle {
+    font-family: courier, monospace;
+    color: #555;
+    margin: 0 5px;
+}
+body {
+    font-family: helvetica, arial, sans-serif;
+}
+
+
+/* Custom Bootstrap Class for five equal columns */
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+
+
+
